@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Página pessoal de Sofia Wiese - lembranças, família e sonhos.">
+  <title>Avaliação programação p internet</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background-color: rgb(255, 240, 250);
+      color: rgb(82, 82, 82);
+      font-size: 14px;
+    }
+
+    header {
+      background-color: #c8a2c8;
+      padding: 10px 0;
+    }
+
+    .menu {
+      color: #ffe4f3;
+    }
+
+    .menu-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+      padding: 0 10px;
+    }
+
+    .logo {
+      width: 40px;
+      border-radius: 100px;
+    }
+
+    .inicio {
+      text-align: center;
+      padding: 30px 15px;
+      background-color: rgb(255, 255, 255);
+    }
+
+    .inicio-conteudo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .info-texto {
+      width: 100%;
+      text-align: center;
+    }
+
+    .info-texto h1 {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+
+    .info-texto p {
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+
+    .foto-perfil {
+      width: 120px;
+      border-radius: 50%;
+      border: 3px solid #c8a2c8;
+      margin-bottom: 15px;
+    }
+
+    section {
+      padding: 30px 15px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #c8a2c8;
+      margin-bottom: 25px;
+      font-size: 20px;
+    }
+
+    .galeria {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .galeria img {
+      width: 90%;
+      max-width: 280px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .bloco {
+      background-color: rgb(255, 255, 255);
+      padding: 20px 15px;
+      margin: 0 10px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .bloco-conteudo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .bloco img {
+      width: 80%;
+      max-width: 250px;
+      border-radius: 10px;
+    }
+
+    .bloco-texto {
+      text-align: center;
+    }
+
+    .bloco h3 {
+      font-size: 16px;
+      margin-bottom: 15px;
+      color: #c8a2c8;
+    }
+
+    .bloco p {
+      font-size: 14px;
+      line-height: 1.5;
+      text-align: justify;
+    }
+
+    footer {
+      background-color: #c8a2c8;
+      color: rgb(254, 254, 254);
+      text-align: center;
+      padding: 15px 10px;
+      margin-top: 30px;
+    }
+    
+    .texto-rodape {
+      color: #fce4ec;
+      font-size: 12px;
+    }
+
+    .texto-rodape-instagram {
+      color:#7f5765;
+    }
+
+    @media (min-width: 768px) {
+      .galeria {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      
+
+      .inicio-conteudo {
+        flex-direction: row;
+        text-align: left;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+      }
+      
+      .foto-perfil {
+        margin-bottom: 0;
+        width: 150px;
+      }
+      
+      .info-texto {
+        text-align: left;
+        flex: 1;
+        max-width: 400px;
+      }
+      
+      .info-texto h1 {
+        font-size: 28px;
+      }
+      
+      .info-texto p {
+        font-size: 16px;
+      }
+      
+      .bloco-conteudo {
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+        gap: 40px;
+      }
+      
+      .bloco img {
+        width: 100%;
+        max-width: 300px;
+        flex-shrink: 0;
+      }
+      
+      .bloco-texto {
+        flex: 1;
+        text-align: left;
+      }
+      
+      .bloco h3 {
+        font-size: 18px;
+        text-align: left;
+      }
+      
+      .bloco p {
+        font-size: 16px;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .inicio-conteudo {
+        gap: 60px;
+      }
+      
+      .foto-perfil {
+        width: 180px;
+      }
+      
+      .info-texto h1 {
+        font-size: 32px;
+      }
+      
+      .bloco-conteudo {
+        gap: 50px;
+        margin: 10px;
+      }
+      
+      .bloco img {
+        max-width: 350px;
+        margin: 20px;
+      }
+      
+      .bloco h3 {
+        font-size: 20px;
+      }
+      
+      .bloco p {
+        font-size: 18px;
+        margin: 10px;
+        text-size-adjust: auto;
+      }
+    }
+</style>
+</head>
+
+<body>
+  <header>
+    <nav class="menu" id="menu">
+      <div class="menu-container">
+        <img src="logo_s.png" alt="Logo da Sofia" class="logo" />
+        <h3>Sofia Wiese</h3>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="inicio">
+      <div class="inicio-conteudo">
+        <img src="foto_sofia.jpg" alt="Minha Foto" class="foto-perfil" />
+        <div class="info-texto">
+          <h1>Sofia Wiese</h1>
+          <p><strong>Profissão:</strong> Estudante</p>
+          <p><strong>Origem:</strong> Curitiba - Paraná</p>
+          <p><strong>Idade:</strong> 14 anos</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="lembrancas" class="lembrancas">
+      <h2>Lembranças</h2>
+      <div class="galeria">
+        <img src="foto_amigas.jpeg" alt="Minha viagem de formatura" />
+        <img src="foto_copa.jpeg" alt="Primeira copa do mundo com o meu irmão" />
+        <img src="foto_turma.jpeg" alt="Minha turma de 2024" />
+        <img src="foto_vo.jpeg" alt="Eu e meu avô" />
+      </div>
+    </section>
+
+    <section id="pessoas" class="pessoas">
+     <div class="bloco">
+        <h2>Pessoas, coisas ou sonhos</h2>
+        <div class="bloco-conteudo">
+          <img src="foto_familia.jpeg" alt="Minha família" />
+          <div class="bloco-texto">
+            <h3>Minhas pessoas favoritas: Minha mãe, meu pai e meu irmão.</h3>
+            <p>Minha família de casa sempre foi o meu porto seguro. Desde quando eu era pequena minha mãe e meu irmão nunca saíram de perto de mim, já meu pai sempre trabalhou viajando, mas não por isso deixou de dar amor e atenção para mim e toda a família. Eu amo muito eles e sem dúvidas são a coisa mais especial do mundo pra mim. Eu amo muito eles, e sem dúvidas são a coisa mais especial do mundo para mim. Essa família me deu muito mais do que um lar - me deu raízes sólidas e asas para voar. Eles me ensinaram sobre valores, sobre a importância dos relacionamentos genuínos e sobre como o amor pode superar qualquer distância ou dificuldade. São pessoas que me inspiram diariamente a ser uma pessoa melhor, e por quem sinto uma gratidão imensa por todo o cuidado, proteção e amor que sempre me ofereceram incondicionalmente.</p>
+          </div>
+        </div>
+     </div>
+    </section>
+  </main>
+
+  <footer>
+    <p class="texto-rodape">&copy; 2025 - <a class="texto-rodape-instagram" href="https://www.instagram.com/wiese.sofia/"> @wiese.sofia </a></p>
+  </footer>
+
+</body>
+</html>
